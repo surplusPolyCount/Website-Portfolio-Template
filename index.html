@@ -1,0 +1,67 @@
+<html>
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/fh-3.1.4/datatables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"> 
+</head>
+<body> 
+<!-- 
+    LOADING PAGE
+-->
+
+<!-- 
+    MAIN PAGE 
+
+<div id="main-body"> 
+    <div id="main-label">
+        <h1> 
+            Wooyeon Kim 
+        </h1> 
+    </div>
+    <div id="main-nav">
+        <div class="main-nav-a"> 
+            <a  href="">3D</a>
+        </div> 
+        <div class="main-nav-a"> 
+            <a href="">Painting</a>
+        </div>
+        <div class="main-nav-a"> 
+            <a href="">Design</a>
+        </div>
+    </div> 
+-->
+<canvas id="glcanvas" width="600" height="600"> 
+
+</canvas>
+</div>
+<script id="vertex-shader-2d" type="notjs">
+     
+    // an attribute will receive data from a buffer
+    attribute vec4 a_position;
+   
+    // all shaders have a main function
+    void main() {
+   
+      // gl_Position is a special variable a vertex shader
+      // is responsible for setting
+      gl_Position = a_position;
+    } 
+</script>
+<script id="fragment-shader-2d" type="notjs">
+ 
+    // fragment shaders don't have a default precision so we need
+    // to pick one. mediump is a good default
+    precision mediump float;
+   
+    void main() {
+      // gl_FragColor is a special variable a fragment shader
+      // is responsible for setting
+      gl_FragColor = vec4(1, 0, 0.5, 1); // return reddish-purple
+    }
+   
+  </script>
+<script src="js/test.js"></script> 
+</body>
+</html>
