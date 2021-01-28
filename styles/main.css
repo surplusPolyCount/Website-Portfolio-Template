@@ -8,7 +8,7 @@ a:hover{
 }
 #main-body{
     background: #434343; 
-    height: 1000px;
+    height: 1150px;
     color: #EEEEEE;
 }
 #main-label{
@@ -23,6 +23,10 @@ a:hover{
     width: 100px; 
     font-size: 25px;
     margin: 0px 200px;
+}
+
+#glcanvas{ 
+    position: absolute;
 }
 
 .main-nav-a{  
